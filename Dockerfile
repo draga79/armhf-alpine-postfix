@@ -9,6 +9,6 @@ EXPOSE 25
 
 COPY entrypoint.sh /tmp/
 
-RUN apk update && apk add postfix
+RUN apk --no-cache add postfix
 ENTRYPOINT ["/tmp/entrypoint.sh"]
 
