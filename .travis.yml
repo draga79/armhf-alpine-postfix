@@ -9,7 +9,7 @@ script:
 # build image
 - docker build -t dragas/armhf-alpine-postfix .
 # test image
-- docker run dragas/armhf-alpine-postfix
+- docker run dragas/armhf-alpine-postfix postfix check
 # push image
 - >
   if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
