@@ -1,4 +1,5 @@
-FROM easypi/alpine-arm
+#FROM easypi/alpine-arm
+FROM hypriot/rpi-alpine
 MAINTAINER Stefano Marinelli <stefano@dragas.it>
 
 # Base layer
